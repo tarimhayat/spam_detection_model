@@ -40,7 +40,6 @@ def home():
         transformed_sms = transform_text(text)
         vector_input = tfidf.transform([transformed_sms])
         result = model.predict(vector_input)[0]
-        print(result)
         if result == 1:
             output= "Spam"
         else:
