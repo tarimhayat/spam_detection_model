@@ -4,6 +4,8 @@ from nltk.corpus import stopwords
 import string
 from nltk.stem.porter import PorterStemmer
 import pickle
+nltk.download('punkt_tab')
+nltk.download('stopwords')
 
 app = Flask(__name__)
 
