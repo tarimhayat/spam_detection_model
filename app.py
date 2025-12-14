@@ -41,9 +41,9 @@ def home():
         vector_input = tfidf.transform([transformed_sms])
         result = model.predict(vector_input)[0]
         if result == 1:
-            output= "Spam"
+            output= "SPAM Message"
         else:
-            output= "Ham"
+            output= "HAM Message"
     return render_template("index.html", detect=output)
 
 if __name__ == "__main__":
